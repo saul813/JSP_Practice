@@ -1,5 +1,5 @@
 
-<%@ page language = "java" contentType= "text/html; charset=UTF-8" pageEncoding= "UTF-8"%>
+<%@ page import = "java.util.*" language = "java" contentType= "text/html; charset=UTF-8" pageEncoding= "UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,5 +15,13 @@
         }
      %>
      <p>The Sum of numbers 1 to 5 is: <%= total %></p>
+     <%!
+             Date theDate = new Date();
+             Date getDate() {
+                 System.out.println("In getDate() method");
+                 return theDate;
+             }
+         %>
+         Hello! The time is now <%= getDate() %>
 </body>
 </html>
