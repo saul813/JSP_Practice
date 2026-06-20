@@ -26,5 +26,14 @@ for(int i = 0; i < 5; i++){
     out.println("<br/>It's great to code from Scratch: "+ (1+i));
  }
  %>
+
+ <br></br>
+ <h2>Working with JSP Declarations</h2>
+ <%!
+    String transformToLowerCase(String data) {
+    return data.toLowerCase();
+    }
+ %>
+ Lower case of "SABUNYO sAUL": <%= transformToLowerCase("SABUNYO SAUL") %>
 </body>
 </html>
