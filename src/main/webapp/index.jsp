@@ -4,10 +4,11 @@
 <h1>Introduction to JSPs</h1>
 <! Simple Hello World -->
 <p>Hello JSP World.</p>
+<h2>Working with JSP Expressions</h2>
 The date is <%= new java.util.Date() %>
 
 <br></br>
-<! Converting a string to upper case using a java expression-->
+<! Converting a string to upper case using a java expression (Objects)-->
 Saul in uppercase is: <%= new String("Saul").toUpperCase() %>
 
 <br></br>
@@ -17,5 +18,13 @@ Saul in uppercase is: <%= new String("Saul").toUpperCase() %>
 <br></br>
 <! Working with booleans-->
 Is 14 less than 8? <%= 14<8 %>
+
+<br></br>
+<h2>Working with JSP Scriplets</h2>
+<%
+for(int i = 0; i < 5; i++){
+    out.println("<br/>It's great to code from Scratch: "+ (1+i));
+ }
+ %>
 </body>
 </html>
