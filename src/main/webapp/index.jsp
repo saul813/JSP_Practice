@@ -1,4 +1,4 @@
-
+<%@ page import = "com.example.MyClass" %>
 <html>
 <body>
 <h1>Introduction to JSPs</h1>
@@ -35,5 +35,13 @@ for(int i = 0; i < 5; i++){
     }
  %>
  Lower case of "SABUNYO sAUL": <%= transformToLowerCase("SABUNYO SAUL") %>
+
+ <br></br>
+  <h2>Working with Classes in JSPs</h2>
+  <%
+  MyClass myc = new MyClass();
+  String lowercase = myc.takeToLowerCase("NABUMALI HIGH SCHOOL");
+   %>
+   Output from the linked Java Class is: <%= lowercase %>
 </body>
 </html>
