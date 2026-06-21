@@ -43,5 +43,12 @@ for(int i = 0; i < 5; i++){
   String lowercase = myc.takeToLowerCase("NABUMALI HIGH SCHOOL");
    %>
    Output from the linked Java Class is: <%= lowercase %>
+
+  <br></br>
+  <h2>Working with Built-in Objects in JSPs</h2>
+  <h2>1. Request-Object</h2>
+  The browser is: <%= request.getHeader("User-Agent") %>
+  <br></br>
+  The Request Language is: <%= request.getLocale() %>
 </body>
 </html>
