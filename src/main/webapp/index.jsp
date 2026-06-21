@@ -1,6 +1,8 @@
 <%@ page import = "com.example.MyClass" %>
 <html>
 <body>
+<jsp:include page= "Myheader.html" />
+<br></br>
 <h1>Introduction to JSPs</h1>
 <! Simple Hello World -->
 <p>Hello JSP World.</p>
@@ -50,5 +52,9 @@ for(int i = 0; i < 5; i++){
   The browser is: <%= request.getHeader("User-Agent") %>
   <br></br>
   The Request Language is: <%= request.getLocale() %>
+
+  <br></br>
+  <h2>Including Files in Jsps</h2>
+  <jsp:include page= "MyFooter.jsp" />
 </body>
 </html>
